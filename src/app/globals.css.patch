@@ -1,0 +1,27 @@
+/* Add to globals.css - hover states via CSS only */
+.streamer-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--r-md);
+  padding: 1rem;
+  text-align: center;
+  transition: border-color .3s var(--ease-spring), transform .3s var(--ease-spring);
+  cursor: default;
+}
+.streamer-card:hover {
+  transform: translateY(-4px);
+}
+.streamer-card.twitch:hover { border-color: rgba(145,70,255,.4); }
+.streamer-card.kick:hover   { border-color: rgba(83,252,24,.35); }
+.streamer-card.youtube:hover{ border-color: rgba(255,0,0,.35); }
+.streamer-card.tiktok:hover { border-color: rgba(255,255,255,.2); }
+
+.faq-pill-link {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-family: var(--font-mono); font-size: .72rem;
+  color: var(--text2); background: var(--surface);
+  border: 1px solid var(--border); border-radius: 100px;
+  padding: .3rem .85rem; text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.faq-pill-link:hover { border-color: var(--border-gold); color: var(--gold); }
